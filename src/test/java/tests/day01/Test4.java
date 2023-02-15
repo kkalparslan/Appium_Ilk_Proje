@@ -2,7 +2,6 @@ package tests.day01;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -15,7 +14,8 @@ public class Test4 {
     By lContinue = By.id("com.android.permissioncontroller:id/continue_button");
     By lOkButton = By.id("android:id/button1");
     By lUnknown = By.id("com.touchboarder.android.api.demos:id/buttonDefaultPositive");
-    By lAccessibility = By.xpath("//*[@text='API Demos']");
+    By lApiDemos = By.xpath("//*[@text='API Demos']");
+    By lAccessibility=(By.xpath("//*[@text='Accessibility']"));
     AppiumDriver<MobileElement> driver;
 
     @BeforeTest
@@ -35,6 +35,7 @@ public class Test4 {
         driver.findElement(lContinue).click();
         driver.findElement(lOkButton).click();
         driver.findElement(lUnknown).click();
+        driver.findElement(lApiDemos).click();
         driver.findElement(lAccessibility).click();
     }
     @Test
@@ -42,6 +43,7 @@ public class Test4 {
         click(lContinue); // test 1 ile farkı aşağıda tanımladığımız click methodunu çağırarak
         click(lOkButton); // doğrudan locator a click yaptırdık..
         click(lUnknown);
+        click(lApiDemos);
         click(lAccessibility);
     }
     void click(By locator) {

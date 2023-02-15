@@ -95,6 +95,7 @@ public class Test2 {
         driver.findElement(By.id("android:id/button1")).click();
         driver.findElement(By.id("com.touchboarder.android.api.demos:id/buttonDefaultPositive")).click();
         driver.findElement(By.xpath("//*[@text='API Demos']")).click();
+        driver.findElement(By.xpath("//*[@text='Accessibility']")).click();
 
         driver.closeApp();
 
