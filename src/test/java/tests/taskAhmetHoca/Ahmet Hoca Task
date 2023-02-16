@@ -1,0 +1,41 @@
+ /**
+    1.    Scenario 1
+    a.    Views->Controls'a tiklayin
+    b.    Light Theme'e tiklayin
+    c.    Inputbox'a "Controls" metnini send ediniz
+    d.    Checkbox1'e tiklayin ve checked oldugunu assert edin
+    e.    RadioButton1'e tiklayin  ve checked oldugunu assert edin
+    f.    Star'a  tiklayin  ve checked oldugunu assert edin
+    g.    Ilk button'a  tiklayin ve textinin ON, statüsünün checked oldugunu assert edin
+    h.    Ikinci button'un textinin OFF, statüsünün unchecked oldugunu assert edin
+    i.    Selectbox'dan Mars secenegini seciniz.
+     */
+
+   /**
+    2.    Scenario 2
+    a.    Views->Expendable List'e tiklayin
+    b.    Custom Adaptor'e tiklayin
+    c.    People Names'e tiklayin ve 4 adet ismin visible oldugunu assert edin
+    d.    People Names'e tekrar tiklayin ve 4 adet ismin invisible oldugunu assert edin
+    e.    Fish Names'e tiklayin ve ikinci siradaki ismin Bubbles oldugunu assert edin.
+    */
+
+ /**
+     3.    Scenario 3
+     a.    10 ile 20 arasinda random bir sayi secin
+     b.    Views->TextSwitcher'a tiklayin
+     c.    Secilen random sayiya gelinceye kadar Next butonuna tiklayin
+     d.    Istenilen sayiya ulasilinca navigate().back() ile geri gelin.
+      */
+
+  /**
+      4.    Scenario 4
+      a.    OS'e tiklayin
+      b.    SMS messaging'e tiklayin
+      c.    Recipent kismina kendi telefon numaranizi girin
+      d.    Message Body kismina herhangi bir message girin
+      e.    Send butonuna basin
+      f.    Buton altinda cikacak sucess notification'i asset edin.
+      g.    Bu Scenario'da Recipent kismina text girip tekrar edin ve mesajin gönderilmedigini assert edin
+       */
+
