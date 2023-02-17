@@ -59,9 +59,9 @@ public class Scenario2 {
         click(xpathOfText("Expandable Lists"));
         click(xpathOfText("1. Custom Adapter"));
         /**
-        click(xpathOfText("People Names"));  1. yöntem
+        click(xpathOfText("People Names"));  1. yöntem ile click yapamadım.
         MobileElement people = driver.findElement(By.className("android.widget.TextView"));
-        people.click(); 2. yöntem People Names e bir türlü click yapmadı. locate olsada burada görmedi
+        people.click(); 2. yöntem ile de "People Names" e bir türlü click yapmadı. locate olsada burada da görmedi
 
         MobileElement arnold = driver.findElement(xpathOfText("Arnold"));
         Assert.assertTrue(arnold.isDisplayed());
