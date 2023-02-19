@@ -6,6 +6,7 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -16,8 +17,10 @@ import utils.App;
 import utils.Device;
 import utils.Driver;
 
+import javax.swing.*;
 import java.text.MessageFormat;
 import java.time.Duration;
+import java.util.List;
 
 public class Scenario2 {
     /**
@@ -58,20 +61,23 @@ public class Scenario2 {
         click(xpathOfText("Views"));
         click(xpathOfText("Expandable Lists"));
         click(xpathOfText("1. Custom Adapter"));
-        /**
-        click(xpathOfText("People Names"));  1. yöntem ile click yapamadım.
-        MobileElement people = driver.findElement(By.className("android.widget.TextView"));
-        people.click(); 2. yöntem ile de "People Names" e bir türlü click yapmadı. locate olsada burada da görmedi
 
-        MobileElement arnold = driver.findElement(xpathOfText("Arnold"));
-        Assert.assertTrue(arnold.isDisplayed());
-        MobileElement barry = driver.findElement(xpathOfText("Barry"));
-        Assert.assertTrue(barry.isDisplayed());
-        MobileElement chuck = driver.findElement(xpathOfText("Chuck"));
-        Assert.assertTrue(chuck.isDisplayed());
-        MobileElement david = driver.findElement(xpathOfText("David"));
-        Assert.assertTrue(david.isDisplayed());*/
+        //click(xpathOfText("People Names"));  //1. yöntem ile click yapamadım.
+        new Actions(driver).moveToElement(driver.findElement(xpathOfText("People Names")), 5,5).click().build().perform();
+//        List<MobileElement> people = driver.findElements(By.className("android.widget.TextView"));
+//        people.get(0).click();
+        //driver.navigate().back();//2. yöntem ile de "People Names" e bir türlü click yapmadı. locate olsada burada da görmedi
 
+//        MobileElement arnold = driver.findElement(xpathOfText("Arnold"));
+//        Assert.assertTrue(arnold.isDisplayed());
+//        MobileElement barry = driver.findElement(xpathOfText("Barry"));
+//        Assert.assertTrue(barry.isDisplayed());
+//        MobileElement chuck = driver.findElement(xpathOfText("Chuck"));
+//        Assert.assertTrue(chuck.isDisplayed());
+//        MobileElement david = driver.findElement(xpathOfText("David"));
+//        Assert.assertTrue(david.isDisplayed());
+//
+        wait.until(ExpectedConditions.visibilityOfElementLocated(xpathOfText("Arnold")));
         Boolean arnold1 = wait.until(ExpectedConditions.invisibilityOfElementLocated(xpathOfText("Arnold")));
         Assert.assertTrue(arnold1);
         Boolean barry1 = wait.until(ExpectedConditions.invisibilityOfElementLocated(xpathOfText("Barry")));
