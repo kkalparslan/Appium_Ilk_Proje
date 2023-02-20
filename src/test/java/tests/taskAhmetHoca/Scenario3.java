@@ -62,7 +62,7 @@ public class Scenario3 {
         click(xpathOfText("Views"));
         swipeUntil(xpathOfText("TextSwitcher"),.7, .3);
         click(xpathOfText("TextSwitcher"));
-        for (int i = 1; i < randomNum; i++) {
+        for (int i = 1; i <= randomNum; i++) {
             click(xpathOfText("NEXT"));
         }
         driver.navigate().back();
