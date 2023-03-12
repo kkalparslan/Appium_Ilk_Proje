@@ -1,4 +1,4 @@
-package tests.taskAhmetHoca;
+package tests.taskAHoca;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -17,10 +17,8 @@ import utils.App;
 import utils.Device;
 import utils.Driver;
 
-import javax.swing.*;
 import java.text.MessageFormat;
 import java.time.Duration;
-import java.util.List;
 
 public class Scenario2 {
     /**

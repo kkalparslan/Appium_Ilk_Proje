@@ -1,4 +1,4 @@
-package tests.taskAhmetHoca;
+package tests.taskAHoca;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -12,7 +12,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-import utils.Driver;
 
 import java.net.MalformedURLException;
 import java.time.Duration;
