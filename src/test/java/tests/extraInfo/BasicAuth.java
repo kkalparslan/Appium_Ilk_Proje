@@ -1,4 +1,4 @@
-package tests.ahmetHocaExtra;
+package tests.extraInfo;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -12,7 +12,6 @@ import org.testng.annotations.Test;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.time.Duration;
 
 public class BasicAuth {
 
